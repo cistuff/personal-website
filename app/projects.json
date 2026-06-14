@@ -1,0 +1,91 @@
+[
+    {
+        "title": "Tuff Clicker",
+        "subtitle": "Idle Game",
+        "description": "Small desktop incremental clicker game with upgrades and persistent save data.",
+        "isOpenSource": true,
+        "sourceUrl": "https://github.com/cistuff/tuff-clicker",
+        "projectCards": [
+            {
+                "name": "React",
+                "color": "#61DAFB"
+            },
+            {
+                "name": "TypeScript",
+                "color": "#3178C6"
+            },
+            {
+                "name": "Electron",
+                "color": "#47848F"
+            },
+            {
+                "name": "Vite",
+                "color": "#646CFF"
+            }
+        ]
+    },
+    {
+        "title": "YOLO Dataset Generator",
+        "subtitle": "Computer Vision",
+        "description": "Generates training-ready YOLO datasets from unformatted images.",
+        "isOpenSource": true,
+        "sourceUrl": "https://github.com/cistuff/yolo-dataset-generator",
+        "projectCards": [
+            {
+                "name": "Python",
+                "color": "#3776AB"
+            }
+        ]
+    },
+    {
+        "title": "asdf Incorporated",
+        "subtitle": "Roblox Game Studio",
+        "description": "Roblox game studio with over 2 million visits and over $40k in in-game revenue generated.",
+        "isOpenSource": true,
+        "sourceUrl": "https://www.roblox.com/communities/34705934/asdf-Incorporated#!/about",
+        "projectCards": [
+            {
+                "name": "Lua",
+                "color": "#00007C"
+            },
+            {
+                "name": "Roblox",
+                "color": "#E8222A"
+            }
+        ]
+    },
+    {
+        "title": "ModuleSync",
+        "subtitle": "Roblox Library",
+        "description": "Lightweight Roblox module that syncs ModuleScript contents between the server and clients.",
+        "isOpenSource": true,
+        "sourceUrl": "https://github.com/cistuff/ModuleSync",
+        "projectCards": [
+            {
+                "name": "Lua",
+                "color": "#00007C"
+            },
+            {
+                "name": "Roblox",
+                "color": "#E8222A"
+            }
+        ]
+    },
+    {
+        "title": "Amazon Sourcer",
+        "subtitle": "Arbitrage Tool",
+        "description": "Web scraper built with BeautifulSoup that identifies resale opportunities on Amazon. Outputs a spreadsheet of products ranked by profit margin. This tool was used to generate over $20k in sales on my Amazon storefront.",
+        "isOpenSource": false,
+        "sourceUrl": "",
+        "projectCards": [
+            {
+                "name": "Python",
+                "color": "#3776AB"
+            },
+            {
+                "name": "BeautifulSoup",
+                "color": "#FF6B35"
+            }
+        ]
+    }
+]

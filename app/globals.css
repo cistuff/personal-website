@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: bg-zinc-50;
   --foreground: #171717;
+}
+
+@layer components {
+  .lib-card {
+    @apply outline-1 outline-solid w-fit pl-0.5 pr-0.5 font-mono text-xs;
+    outline-color: var(--card-color);
+    background-color: color-mix(in srgb, var(--card-color) 20%, transparent);
+    color: var(--card-color);
+  }
+
+  .github-a {
+    @apply mt-4 outline-1 outline-solid outline-gray-500 bg-gray-500/20 text-gray-500 w-fit pl-0.5 pr-0.5 font-mono text-sm;
+  }
+
+  .closed-source-a {
+    @apply mt-4 outline-1 outline-solid outline-orange-500 bg-orange-500/20 text-orange-500 w-fit pl-0.5 pr-0.5 font-mono text-sm;
+  }
+
+  .logo-img {
+    @apply size-5
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
+html {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inconsolata', monospace;
+}
+
+.title-card {
+  border: 1px
 }
