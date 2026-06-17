@@ -11,7 +11,7 @@ export default function LibCard({
 }: ProjectCardProps) {
     return (
         <p className="lib-card" style={{ 'color': color }}>
-            text
+            {text}
         </p>
     );
 }
