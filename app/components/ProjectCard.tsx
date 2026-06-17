@@ -1,6 +1,6 @@
 import SourceCard from "./SourceCard";
 
-export default function ProjectCard({ title="Title", subtitle="Subtitle", description="Description", sourceUrl="", isOpenSource=true, sourceName="GitHub", children }) {
+export default function ProjectCard({ title = "Title", subtitle = "Subtitle", description = "Description", sourceUrl = "", isOpenSource = true, sourceName = "GitHub", children = <></> }) {
     return (
         <div className="p-2 outline-1 outline-solid">
             {isOpenSource ? <a href={sourceUrl} target="_blank" className='text-lg underline text-blue-500'>{title}</a> : <p className='text-lg'>{title}</p>}
