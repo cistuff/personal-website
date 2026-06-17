@@ -8,9 +8,9 @@
 @layer components {
   .lib-card {
     @apply outline-1 outline-solid w-fit pl-0.5 pr-0.5 font-mono text-xs;
-    outline-color: var(--card-color);
-    background-color: color-mix(in srgb, var(--card-color) 20%, transparent);
-    color: var(--card-color);
+    outline-color: var(color);
+    background-color: color-mix(in srgb, var(color) 20%, transparent);
+    color: var(color);
   }
 
   .github-a {

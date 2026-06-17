@@ -49,7 +49,7 @@ export default function Home() {
               isOpenSource={data.isOpenSource}
             >
               {Object.entries(data.projectCards).map(([key, data]) => (
-                <LibCard color={data.color}>{data.name}</LibCard>
+                <LibCard color={data.color}><p>data.name</p></LibCard>
               ))}
             </ProjectCard>
           ))}

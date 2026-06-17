@@ -1,6 +1,22 @@
-import SourceCard from "./SourceCard";
+import { ReactElement } from "react";
 
-export default function ProjectCard({ title = "Title", subtitle = "Subtitle", description = "Description", sourceUrl = "", isOpenSource = true, sourceName = "GitHub", children = <></> }) {
+interface ProjectCardProps {
+    title: string;
+    subtitle: string;
+    description: string;
+    sourceUrl: string;
+    isOpenSource: boolean;
+    children: ReactElement | ReactElement[];
+}
+
+export default function ProjectCard({
+    title = "Title",
+    subtitle = "Subtitle",
+    description = "Description",
+    sourceUrl = "",
+    isOpenSource = true,
+    children,
+}: ProjectCardProps) {
     return (
         <div className="p-2 outline-1 outline-solid">
             {isOpenSource ? <a href={sourceUrl} target="_blank" className='text-lg underline text-blue-500'>{title}</a> : <p className='text-lg'>{title}</p>}
