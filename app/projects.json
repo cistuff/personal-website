@@ -1,30 +1,5 @@
 [
     {
-        "title": "Tuff Clicker",
-        "subtitle": "Electron App",
-        "description": "Desktop incremental clicker game with upgrades and persistent save data.",
-        "isOpenSource": true,
-        "sourceUrl": "https://github.com/cistuff/tuff-clicker",
-        "projectCards": [
-            {
-                "name": "React",
-                "color": "#61DAFB"
-            },
-            {
-                "name": "TypeScript",
-                "color": "#3178C6"
-            },
-            {
-                "name": "Electron",
-                "color": "#47848F"
-            },
-            {
-                "name": "Vite",
-                "color": "#646CFF"
-            }
-        ]
-    },
-    {
         "title": "YOLO Dataset Generator",
         "subtitle": "Python Script",
         "description": "Generates training-ready YOLO datasets from unformatted images.",
