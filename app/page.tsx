@@ -14,16 +14,24 @@ export default function Home() {
 
   useEffect(() => {
     cardEffect();
-    copyEmailToClipboardEffect();
+    // copyEmailToClipboardEffect();
   }, []);
 
   return (
     <div className="flex flex-col flex-1 items-center justify-center">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16sm:items-start">
-        <div className="p-2 outline-1 outline-solid transition-all duration-100 ease-linear" id="main-card">
-          <h1 className='text-5xl'>Max</h1>
+        <div className="p-2 outline-1 outline-solid transition-all duration-150 ease-linear" id="main-card">
+          <p className='text-xl whitespace-pre font-mono'>{`   ▄▄▄▄███▄▄▄▄      ▄████████ ▀████    ▐████▀ 
+ ▄██▀▀▀███▀▀▀██▄   ███    ███   ███▌   ████▀  
+ ███   ███   ███   ███    ███    ███  ▐███    
+ ███   ███   ███   ███    ███    ▀███▄███▀    
+ ███   ███   ███ ▀███████████    ████▀██▄     
+ ███   ███   ███   ███    ███   ▐███  ▀███    
+ ███   ███   ███   ███    ███  ▄███     ███▄  
+  ▀█   ███   █▀    ███    █▀  ████       ███▄ 
+                                              `}</p>
           <p className='text-xl'>HS junior passionate about computer science.</p>
-          <p className='text-normal cursor-pointer hover:text-blue-500 hover:underline inline' id='email-text' title='Copy to clipboard'>Email: max [at] example [dot] com</p>
+          {/* <p className='text-normal cursor-pointer hover:text-blue-500 hover:underline inline' id='email-text' title='Copy to clipboard'>Email: max [at] example [dot] com</p> */}
           <div className="flex flex-row items-start gap-2">
             <a href="https://github.com/cistuff/" target="_blank">
               <img className="logo-img" src={githubLogo.src} alt="GitHub"/>
