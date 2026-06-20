@@ -1,13 +1,10 @@
 "use client"
 
 import cardEffect from "./utils/cardEffect";
-import copyEmailToClipboardEffect from "./utils/copyEmailToClipboardEffect"
+// import copyEmailToClipboardEffect from "./utils/copyEmailToClipboardEffect"
 import LibCard from "./components/LibCard";
 import ProjectCard from "./components/ProjectCard";
 import projects from './projects.json'
-import githubLogo from './assets/logos/github.svg'
-import leetcodeLogo from './assets/logos/leetcode.svg'
-import monkeytypeLogo from './assets/logos/monkeytype.svg'
 import { useEffect } from "react";
 
 export default function Home() {
@@ -28,20 +25,13 @@ export default function Home() {
  ███   ███   ███ ▀███████████    ████▀██▄     
  ███   ███   ███   ███    ███   ▐███  ▀███    
  ███   ███   ███   ███    ███  ▄███     ███▄  
-  ▀█   ███   █▀    ███    █▀  ████       ███▄ 
-                                              `}</p>
+  ▀█   ███   █▀    ███    █▀  ████       ███▄ `}</p>
           <p className='text-xl'>HS junior passionate about computer science.</p>
           {/* <p className='text-normal cursor-pointer hover:text-blue-500 hover:underline inline' id='email-text' title='Copy to clipboard'>Email: max [at] example [dot] com</p> */}
-          <div className="flex flex-row items-start gap-2">
-            <a href="https://github.com/cistuff/" target="_blank">
-              <img className="logo-img" src={githubLogo.src} alt="GitHub"/>
-            </a>
-            <a href="https://leetcode.com/u/anatomical" target="_blank">
-              <img className="logo-img" src={leetcodeLogo.src} alt="LeetCode"/>
-            </a>
-            <a href="https://monkeytype.com/profile/mxa" target="_blank">
-              <img className="logo-img" src={monkeytypeLogo.src} alt="Monkeytype"/>
-            </a>
+          <div className="flex flex-row justify-center gap-2 w-1/1">
+            <a href="https://github.com/cistuff/" target="_blank">[github]</a>
+            <a href="https://leetcode.com/u/anatomical" target="_blank">[leetcode]</a>
+            <a href="https://monkeytype.com/profile/mxa" target="_blank">[monkeytype]</a>
           </div>
         </div>
 
@@ -50,6 +40,7 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-6 p-2">
           {Object.entries(projects).map(([key, data]) => (
             <ProjectCard
+              key={key}
               title={data.title}
               subtitle={data.subtitle}
               description={data.description}
@@ -57,7 +48,7 @@ export default function Home() {
               isOpenSource={data.isOpenSource}
             >
               {Object.entries(data.projectCards).map(([key, data]) => (
-                <LibCard color={data.color} text={data.name}></LibCard>
+                <LibCard color={data.color} text={data.name} key={key}></LibCard>
               ))}
             </ProjectCard>
           ))}

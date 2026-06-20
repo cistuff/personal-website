@@ -1,21 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: bg-zinc-50;
-  --foreground: #000000;
+  --background: #171717;
+  --foreground: #F9A8D4;
 }
 
 @layer components {
   .lib-card {
     @apply outline-1 outline-solid w-fit pl-0.5 pr-0.5 font-mono text-xs;
-  }
-
-  .github-a {
-    @apply mt-4 outline-1 outline-solid outline-gray-500 bg-gray-500/20 text-gray-500 w-fit pl-0.5 pr-0.5 font-mono text-sm;
-  }
-
-  .closed-source-a {
-    @apply mt-4 outline-1 outline-solid outline-orange-500 bg-orange-500/20 text-orange-500 w-fit pl-0.5 pr-0.5 font-mono text-sm;
   }
 
   .logo-img {
@@ -32,7 +24,6 @@ html {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Inconsolata', monospace;
-  
 }
 
 .title-card {
