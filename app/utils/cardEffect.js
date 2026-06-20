@@ -1,5 +1,5 @@
-function transformElement(element, offsetX, offsetY) {
-    element.style.transform = `translate(${offsetX}px, ${offsetY}px) rotateX(${offsetX}deg) rotateY(${offsetY}deg)`
+function transformElement(element, offsetX, offsetY, scale) {
+    element.style.transform = `translate(${offsetX}px, ${offsetY}px) rotateX(${offsetX}deg) rotateY(${offsetY}deg) scale(${scale})`
 }
 
 export default function cardEffect() {
@@ -15,10 +15,10 @@ export default function cardEffect() {
 
         console.log(offsetX);
 
-        transformElement(card, offsetX, offsetY);
+        transformElement(card, offsetX, offsetY, 1.03);
     })
 
     card.addEventListener('mouseleave', function (e) {
-        transformElement(card, 0, 0);
+        transformElement(card, 0, 0, 1);
     })
 }
